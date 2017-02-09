@@ -1,0 +1,1 @@
+This project covers C variables and loops.
