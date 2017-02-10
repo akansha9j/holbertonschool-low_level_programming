@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* This program prints numbers from 0 to 9 with
+/* This program prints characters from 0 to 9 with
  * the help pf putchar function.
  */
 
