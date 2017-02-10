@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/* This program prints characters from 0 to 9 with
- * the help of putchar function.
- */
-
 /**
  * main - Entry point
  *
