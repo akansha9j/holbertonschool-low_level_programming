@@ -1,32 +1,43 @@
 #include "holberton.h"
 
 /**
+ * print_num - prints number
+ * @n: input number
+ *
+ * Return: void
+ *
+ */
+void print_num(unsigned int n)
+{
+	int p, q;
+
+	p = n / 10;
+	q = n % 10;
+	_putchar(p + '0');
+	_putchar(q + '0');
+}
+/**
  * jack_bauer - prints every minute of the day of Jack Bauer.
  *
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: void
+ *
  */
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int hour, min;
 
-	for (i = 0; i <= 2; i++)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		for (j = 0; j <= 3; j++)
+		for (min = 0; min <= 59; min++)
 		{
-			for (k = 0; k <= 5; k++)
-			{
-				for (l = 0; l <= 9; l++)
-				{
-					_putchar(i + '0');
-					_putchar(j + '0');
-					_putchar(':');
-					_putchar(k + '0');
-					_putchar(l + '0');
-					_putchar('\n');
-				}
-			}
+			print_num(hour);
+			_putchar(':');
+			print_num(min);
+			_putchar('\n');
 		}
 	}
+
+
+
 }
