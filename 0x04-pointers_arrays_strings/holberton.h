@@ -23,3 +23,11 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 
 char *_strcpy(char *dest, char *src);
+
+int _atoi(char *s);
+
+int cal_sign(char *s);
+
+int num_indx(char *s);
+
+int last_indx(char *s);
