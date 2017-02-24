@@ -1,10 +1,8 @@
-#include "holberton.h"
-
 /**
  * rot13 - encodes a string using rot13.
- * @s: pointer to the input string
+ * @s: pointer to input string
  *
- * Return: pointer to the encoded string
+ * Return: pointer to encoded string
  *
  */
 char *rot13(char *s)
@@ -24,7 +22,7 @@ char *rot13(char *s)
 			if (s[i] == ar1[j])
 			{
 				s[i] = ar2[j];
-				j = 52;
+				break;
 			}
 		}
 		i++;
