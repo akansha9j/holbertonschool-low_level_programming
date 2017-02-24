@@ -10,10 +10,26 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int ls1, ls2;
+	int ls1, ls2, i;
 
 	ls1 = _strlen(s1);
 	ls2 = _strlen(s2);
+
+	for (i = 0; i < ls1 && i < ls2; i++)
+	{
+		if (s1[i] != s2[i])
+		{
+			if (s1[i] < s2[i])
+			{
+				return (-15);
+			}
+			else
+			{
+				return (15);
+			}
+		}
+
+	}
 
 	if (ls1 < ls2)
 	{
