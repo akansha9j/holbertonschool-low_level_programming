@@ -22,6 +22,7 @@ char *rot13(char *s)
 			if (s[i] == ar1[j])
 			{
 				s[i] = ar2[j];
+				j = 52;
 			}
 		}
 		i++;
