@@ -19,30 +19,20 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[i] != s2[i])
 		{
-			if (s1[i] < s2[i])
-			{
-				return (-15);
-			}
-			else
-			{
-				return (15);
-			}
+			return (s1[i] - s2[i]);
 		}
 
 	}
 
-	if (ls1 < ls2)
+	if (ls1 != ls2)
 	{
-		return (-15);
-	}
-	else if (ls1 == ls2)
-	{
-		return (0);
+		return (ls1 - ls2);
 	}
 	else
 	{
-		return (15);
+		return (0);
 	}
+
 }
 
 /**
