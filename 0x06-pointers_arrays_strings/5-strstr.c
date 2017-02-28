@@ -33,6 +33,10 @@ char *_strstr(char *haystack, char *needle)
 				{
 					ch = &haystack[i];
 				}
+				if (count == len)
+				{
+					return (ch);
+				}
 				break;
 			}
 			else
@@ -42,9 +46,6 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
-	if (count == len)
-	{
-		return (ch);
-	}
+
 	return ('\0');
 }
