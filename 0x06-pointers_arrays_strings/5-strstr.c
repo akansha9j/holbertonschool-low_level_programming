@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * _strstr - locates a substring.
  * @haystack: pointer to input string
@@ -13,12 +15,7 @@ char *_strstr(char *haystack, char *needle)
 	char *ch;
 
 	k = 0;
-	len = 0;
-
-	while (needle[len] != '\0')
-	{
-		len++;
-	}
+	len = _strlen(needle);
 
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
@@ -47,4 +44,21 @@ char *_strstr(char *haystack, char *needle)
 	}
 
 	return ('\0');
+}
+/**
+ * _strlen - calculates length of a string
+ * @s: pointer to input string
+ *
+ * Return: length
+ *
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
