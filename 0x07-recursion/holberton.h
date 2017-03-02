@@ -21,3 +21,6 @@ int is_prime_number(int n);
 
 int is_palindrome(char *s);
 
+int _strlen_rec(char *s);
+
+int is_palindrome_rec(char *s, int i, int len);
