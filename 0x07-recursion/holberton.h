@@ -26,3 +26,5 @@ int _strlen_rec(char *s);
 int is_palindrome_rec(char *s, int i, int len);
 
 int is_prime_rec(int n, int div);
+
+int _sqrtis(int n, int div);
