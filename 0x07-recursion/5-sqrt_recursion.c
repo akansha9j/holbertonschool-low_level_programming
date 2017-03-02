@@ -10,6 +10,8 @@
  */
 int _sqrt_recursion(int n)
 {
+	int div;
+
 	if (n <= 0)
 	{
 		return (-1);
@@ -19,7 +21,9 @@ int _sqrt_recursion(int n)
 		return (1);
 	}
 
-	return (_sqrtis(n, 2));
+	div = 2;
+
+	return (_sqrtis(n, div));
 
 }
 /**
